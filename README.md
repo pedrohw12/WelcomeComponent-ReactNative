@@ -20,11 +20,14 @@ Note that in order to give the modal title and description, it needs to add the 
 Now, just import the component in where you need it, and put it inside a View like the example:
 
 
-<!-- -- <View>
+-- -- <View>
   <FirstAccess title={'myTitle'} description={'myDescription'} />
-</View> -- -->
+</View> -- 
 
 This is what should looks like:
 
 ![FirstAccess component image]('./assets/img.png')
 
+--<View>
+  <FirstAccess title={'myTitle'} description={'myDescription'} />
+</View> --
