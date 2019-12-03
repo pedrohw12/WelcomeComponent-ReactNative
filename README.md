@@ -24,7 +24,7 @@ Now, just import the component in where you need it, and put it inside a View li
   <FirstAccess title={'myTitle'} description={'myDescription'} />
 </View> -- 
 
-This is what should looks like:
+This is how should looks like:
 
 <p align="center">
   <img src="./assets/img.png" width="350" title="hover text">
@@ -33,3 +33,6 @@ This is what should looks like:
 --<View>
   <FirstAccess title={'myTitle'} description={'myDescription'} />
 </View> --
+
+NOTE - if you need to see the modal one more time, you can clean the storage going in the application info and selecting - clear storage.
+REMINDE that you need to put the component inside of a View component so it will work.
