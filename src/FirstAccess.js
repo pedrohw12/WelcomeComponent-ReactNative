@@ -7,6 +7,8 @@ import {
   TouchableHighlight,
   StyleSheet
 } from "react-native";
+
+import Terms from './Terms';
   export default class FirstAccess extends Component {
     constructor(props) {
       super(props);
@@ -47,27 +49,23 @@ import {
               alert("Modal has been closed.");
             }}
           >
+            <View style={{flex:5}}>
+            <Terms />
+            </View>
             <View style={styles.ftreContainer}>
-              <View style={styles.ftreTitleContainer}>
-                <Text style={styles.ftreTitle}>{this.props.title}</Text>
-              </View>
-              <View style={styles.ftreDescriptionContainer}>
-                <Text style={styles.ftreDescription} allowFontScaling={true}>
-                  {this.props.description}
-                </Text>
-              </View>
-              <View style={styles.ftreExitContainer}>
+              
+              
                 <TouchableHighlight
                   onPress={() => {
-                    this.setModalVisible(!this.state.modalVisible);
+                    this.setModalVisible([!this.state.modalVisible, alert('termo aceito')]);
                   }}
                 >
                   <View style={styles.ftreExitButtonContainer}>
-                    <Text style={styles.ftreExitButtonText}>Exit</Text>
+                    <Text style={styles.ftreExitButtonText}>Aceitar</Text>
                   </View>
                 </TouchableHighlight>
               </View>
-            </View>
+            
           </Modal>
         </View>
       );
@@ -78,45 +76,12 @@ const styles = StyleSheet.create({
   ftreContainer:{
       backgroundColor:'white',
       flex:1,
-      marginTop:70,
-      marginBottom:40,
+      marginTop:10,
+      marginBottom:10,
       marginLeft:20,
       marginRight:20,
-      borderRadius:20,
-      borderWidth:4,
-      borderColor:'blue'
-    },
-    ftreTitle:{
-      color:'black',
-      fontWeight:'bold',
-      fontSize:20,
-      textAlign:'center',
-      margin:10,	
-    },
-    ftreDescription:{
-      color:'black',
-      fontSize:15,
-      marginRight:20,
-      marginLeft:20
-    },
-    ftreCloseIcon:{
-      alignSelf:'flex-end',
-      flex:0.5,
-      marginRight:10
-    },
-    ftreTitleContainer:{
-      flex:1,
-      flexDirection:'row',
-      justifyContent:'center',
-      alignItems:'center'
-    },
-    ftreDescriptionContainer:{
-      flex:6.5
-    },
-    ftreExitContainer:{
-      flex:2,
-      justifyContent:'flex-start',
-      alignItems:'center',
+      justifyContent: 'center',
+      alignItems: 'center'
     },
     ftreExitButtonContainer:{
       width:200,

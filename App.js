@@ -9,7 +9,7 @@ import FirstAccess from './src/FirstAccess';
     render() {
       return (
         <View>
-          <Text> Hello World </Text>
+          <Text> CONTEÙDO DA PÁGINA </Text>
           <FirstAccess pagekey={'firstaccess'} title={'hello world'} description={'welcome to my app'} />
         </View>
       );
