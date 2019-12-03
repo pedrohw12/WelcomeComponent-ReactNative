@@ -21,7 +21,7 @@ Now, just import the component in where you need it, and put it inside a View li
 
 
 -- -- <View>
-  <FirstAccess title={'myTitle'} description={'myDescription'} />
+  <strong><FirstAccess title={'myTitle'} description={'myDescription'} /></strong>
 </View> -- 
 
 This is how should looks like:
