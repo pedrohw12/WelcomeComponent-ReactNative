@@ -28,7 +28,7 @@ This is what should looks like:
 
 <p align="center">
   <img src="./assets/img.png" width="350" title="hover text">
-</p>)
+</p>
 
 --<View>
   <FirstAccess title={'myTitle'} description={'myDescription'} />
