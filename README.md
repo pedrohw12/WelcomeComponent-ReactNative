@@ -2,7 +2,7 @@ The First Access component of this simple project is in:
 
 - src > FirstAccess;
 
-What this does ? This is the component that will pop up in the first access of the client
+<strong>What this does</strong> ? This is the component that will pop up in the first access of the client
 in the page that mount the component.
 
 Why shows only once ? Because the asyncstorage is set, so it will save the information and won't
