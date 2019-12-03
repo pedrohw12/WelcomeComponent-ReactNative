@@ -26,7 +26,9 @@ Now, just import the component in where you need it, and put it inside a View li
 
 This is what should looks like:
 
-![FirstAccess component image]("https://github.com/pedrohw12/WelcomeComponent-ReactNative/blob/master/assets/img.png")
+<p align="center">
+  <img src="./assets/img.png" width="350" title="hover text">
+</p>)
 
 --<View>
   <FirstAccess title={'myTitle'} description={'myDescription'} />
