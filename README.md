@@ -13,8 +13,18 @@ advices, some term or even some tips on how to use the features.
 
 Note that in order to give the modal title and description, it needs to add the props title and description.
 
+------- You can not use the component as the first thing that shows in the render. It needs to be called after the component be mounted. Otherwise, will show a error - 
+"the bind value at index 1 is null react native"
+
+
 Now, just import the component in where you need it, and put it inside a View like the example:
 
-<!-- <View>
+
+<!-- -- <View>
   <FirstAccess title={'myTitle'} description={'myDescription'} />
-</View> -->
+</View> -- -->
+
+This is what should looks like:
+
+![FirstAccess component image]('./assets/img.png')
+
